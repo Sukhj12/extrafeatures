@@ -42,13 +42,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('✰ ᗩᗪᗪ ᗰᗴ TO YOᑌᖇ ᘜᖇOᑌᑭ ✰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('✰ ᗩᗪᗪ ᗰᗴ TO YOᑌᖇ ᘜᖇOᑌᑭ✰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('✰ Տᗴᗩᖇᑕᕼ ✰', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('✰ ᑕᕼᗩᑎᑎᗴᒪ ✰', url='https://t.me/TeamEvamaria'),
+            InlineKeyboardButton('✰ ᑕᕼᗩᑎᑎᗴᒪ ✰', url='https://t.me/NewLatestMovieDirect'),
+            InlineKeyboardButton('✰ ᑕOᑎTᗴᑕT ᗰᗴ ✰', url='https://t.me/Sukhmankaler')
             ],[
-            InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', callback_data='help')
-            InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/TeamEvamaria'),
+            InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', callback_data='help'),
+            InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/+7FcPo53Z7VZkZDM9'),   
             InlineKeyboardButton('✰ ᗩᗷOᑌT ✰', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -89,13 +89,13 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('✰ ᗩᗪᗪ ᗰᗴ TO YOᑌᖇ ᘜᖇOᑌᑭ ✰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('✰ ᗩᗪᗪ ᗰᗴ TO YOᑌᖇ ᘜᖇOᑌᑭ✰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('✰ Տᗴᗩᖇᑕᕼ ✰', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('✰ ᑕᕼᗩᑎᑎᗴᒪ ✰', url='https://t.me/TeamEvamaria'),
+            InlineKeyboardButton('✰ ᑕᕼᗩᑎᑎᗴᒪ ✰', url='https://t.me/NewLatestMovieDirect'),
+            InlineKeyboardButton('✰ ᑕOᑎTᗴᑕT ᗰᗴ ✰', url='https://t.me/Sukhmankaler')
             ],[
-            InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', callback_data='help')
-            InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/TeamEvamaria'),
+            InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', callback_data='help'),
+            InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/+7FcPo53Z7VZkZDM9'),   
             InlineKeyboardButton('✰ ᗩᗷOᑌT ✰', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
