@@ -404,14 +404,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('✰ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('✰ ᗩᗪᗪ ᗰᗴ TO YOᑌᖇ ᘜᖇOᑌᑭ ✰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('✰ sᴇᴀʀᴄʜ ✰', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('✰ ᴍᴏᴠɪᴇs ✰', url='https://t.me/TeamEvamaria')
-            InlineKeyboardButton('✰ ʜᴇʟᴘ ✰', callback_data='help')
+            InlineKeyboardButton('✰ Տᗴᗩᖇᑕᕼ ✰', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('✰ ᑕᕼᗩᑎᑎᗴᒪ ✰', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', callback_data='help')
             ],[
-            InlineKeyboardButton('✰ ɢʀᴏᴜᴘ ✰', url='https://t.me/TeamEvamaria')
-            InlineKeyboardButton('✰ ᴀʙᴏᴜᴛ ✰', callback_data='about')
+            InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('✰ ᗩᗷOᑌT ✰', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
