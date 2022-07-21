@@ -407,9 +407,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('✰ ᗩᗪᗪ ᗰᗴ TO YOᑌᖇ ᘜᖇOᑌᑭ ✰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('✰ Տᗴᗩᖇᑕᕼ ✰', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('✰ ᑕᕼᗩᑎᑎᗴᒪ ✰', url='https://t.me/TeamEvamaria')
-            InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', callback_data='help'),
+            InlineKeyboardButton('✰ ᑕᕼᗩᑎᑎᗴᒪ ✰', url='https://t.me/TeamEvamaria'),
             ],[
+            InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', callback_data='help')
             InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/TeamEvamaria')
             InlineKeyboardButton('✰ ᗩᗷOᑌT ✰', callback_data='about')
         ]]
