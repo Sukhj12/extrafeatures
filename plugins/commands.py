@@ -48,7 +48,7 @@ async def start(client, message):
             InlineKeyboardButton('✰ ᑕᕼᗩᑎᑎᗴᒪ ✰', url='https://t.me/TeamEvamaria'),
             ],[
             InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', callback_data='help')
-            InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/TeamEvamaria'),
             InlineKeyboardButton('✰ ᗩᗷOᑌT ✰', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -95,7 +95,7 @@ async def start(client, message):
             InlineKeyboardButton('✰ ᑕᕼᗩᑎᑎᗴᒪ ✰', url='https://t.me/TeamEvamaria'),
             ],[
             InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', callback_data='help')
-            InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/TeamEvamaria'),
             InlineKeyboardButton('✰ ᗩᗷOᑌT ✰', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
