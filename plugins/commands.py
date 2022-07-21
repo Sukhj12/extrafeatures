@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('✰ ᴍᴏᴠɪᴇs ✰', url='https://t.me/TeamEvamaria')
+                InlineKeyboardButton('✰ ᑕOᑎTᗴᑕT ᗰᗴ ✰', url='https://t.me/Sukhmankaler')
             ],
             [
-                InlineKeyboardButton('✰ ʜᴇʟᴘ ✰', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
