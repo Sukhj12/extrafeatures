@@ -46,7 +46,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('✰ Տᗴᗩᖇᑕᕼ ✰', switch_inline_query_current_chat=''),
             InlineKeyboardButton('✰ ᑕᕼᗩᑎᑎᗴᒪ ✰', url='https://t.me/TeamEvamaria')
-            InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', callback_data='help')
+            InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', callback_data='help'),
             ],[
             InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/TeamEvamaria')
             InlineKeyboardButton('✰ ᗩᗷOᑌT ✰', callback_data='about')
@@ -93,7 +93,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('✰ Տᗴᗩᖇᑕᕼ ✰', switch_inline_query_current_chat=''),
             InlineKeyboardButton('✰ ᑕᕼᗩᑎᑎᗴᒪ ✰', url='https://t.me/TeamEvamaria')
-            InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', callback_data='help')
+            InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', callback_data='help'),
             ],[
             InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/TeamEvamaria')
             InlineKeyboardButton('✰ ᗩᗷOᑌT ✰', callback_data='about')
