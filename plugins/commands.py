@@ -250,7 +250,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [[
-                    InlineKeyboardButton('✰ ᗷᗩᑕKᑌᑭ ✰', url="https://t.me/+E5spjHhOEAFlMjRl"),
+                    InlineKeyboardButton('✰ ᗷᗩᑕKᑌᑭ ✰', url="https://t.me/+E5spjHhOEAFlMjRl'),
                     InlinekeyboardButton('✰ ᑕOᑎTᗴᑕT ᗰᗴ ✰', url="https://t.me/Sukhmankaler")
                 ]]
             ]
