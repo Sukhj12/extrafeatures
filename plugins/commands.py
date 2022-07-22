@@ -247,9 +247,17 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('✰ ᗷᗩᑕKᑌᑭ ✰', url="https://t.me/+E5spjHhOEAFlMjRl"),
+                    InlinekeyboardButton('✰ ᑕOᑎTᗴᑕT ᗰᗴ ✰', url="https://t.me/Sukhmankaler")
+                ]
+            ]
         )
+    )
+        
                     
-
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
            
