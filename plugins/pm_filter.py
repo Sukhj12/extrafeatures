@@ -782,7 +782,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("TᕼIՏ ᗰOᐯIᗴ ᑎOT ᑌᑭᒪOᗩᗪ <b>ᖇᑌᑫᑌᗴՏT TO ᗩᗪᗰIᑎᗴ 👉[ᑕᒪIᑕK ᕼᗴᖇᗴ](https://t.me/RQ_ADMINE)👈</b>ᖴOᖇ ᖇᑌᑫᑌᗴՏT",
+    await msg.reply("दी गयी सुची मै अपनी मूवी देखे और click करे",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
