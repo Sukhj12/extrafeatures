@@ -249,10 +249,10 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
             [
-                [[
+                [
                     InlineKeyboardButton('✰ ᗷᗩᑕKᑌᑭ ✰ ', url="https://t.me/+E5spjHhOEAFlMjRl"),
                     InlineKeyboardButton('✰ ᑕOᑎTᗴᑕT ᗰᗴ ✰ ', url="https://t.me/Sukhmankaler")
-                ]]
+                ]
             ]
         )
     )
