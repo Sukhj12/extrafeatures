@@ -51,9 +51,22 @@ async def start(client, message):
             InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/+7FcPo53Z7VZkZDM9'),   
             InlineKeyboardButton('✰ ᗩᗷOᑌT ✰', callback_data='about')
         ]]
-        await message.reply_sticker('CAACAgUAAxkBAAEFcGVi6J9_0Fa2TEbHsSO06NDnDpq2RAACBAADwSQxMYnlHW4Ls8gQKQQ')'
-        await asyncio.sleep(0.5)
+        reply1 = await message.reply_text(
+            text="▢▢▢"
         )
+        await asyncio.sleep(0.5)
+        reply2 = await reply1.edit_text(
+            text="▣▢▢"
+        )
+        await asyncio.sleep(0.5)
+        reply3 = await reply2.edit_text(
+            text="▣▣▢"
+        )
+        await asyncio.sleep(0.5)
+        reply4 = await reply3.edit_text(
+            text="▣▣▣"
+        )
+        await reply4.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
             video=random.choice(PICS),
@@ -101,9 +114,22 @@ async def start(client, message):
             InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/+7FcPo53Z7VZkZDM9'),   
             InlineKeyboardButton('✰ ᗩᗷOᑌT ✰', callback_data='about')
         ]]
-        await message.reply_sticker("CAACAgUAAxkBAAEFcGVi6J9_0Fa2TEbHsSO06NDnDpq2RAACBAADwSQxMYnlHW4Ls8gQKQQ")
-        await asyncio.sleep(0.5)
+        reply1 = await message.reply_text(
+            text="▢▢▢"
         )
+        await asyncio.sleep(0.5)
+        reply2 = await reply1.edit_text(
+            text="▣▢▢"
+        )
+        await asyncio.sleep(0.5)
+        reply3 = await reply2.edit_text(
+            text="▣▣▢"
+        )
+        await asyncio.sleep(0.5)
+        reply4 = await reply3.edit_text(
+            text="▣▣▣"
+        )
+        await reply4.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
             Video=random.choice(PICS),
