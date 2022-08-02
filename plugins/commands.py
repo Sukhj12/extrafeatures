@@ -52,9 +52,9 @@ async def start(client, message):
             InlineKeyboardButton('✰ ᗩᗷOᑌT ✰', callback_data='about')
         ]]
         await message.reply_sticker(
-            sticker="CAACAgUAAxkBAAEFcGVi6J9_0Fa2TEbHsSO06NDnDpq2RAACBAADwSQxMYnlHW4Ls8gQKQQ"
+            sticker="CAACAgUAAxkBAAEFcGVi6J9_0Fa2TEbHsSO06NDnDpq2RAACBAADwSQxMYnlHW4Ls8gQKQQ")
         await asyncio.sleep(0.5)
-
+        )
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
             video=random.choice(PICS),
