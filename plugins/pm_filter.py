@@ -804,6 +804,7 @@ async def advantage_spell_chok(msg):
             text=movie.strip(),
             callback_data=f"spolling#{user}#{k}",
         )
+    ] for k, movie in enumerate(movielist)]
         k = await msg.reply("I couldn't find anything related to that. Check your spelling")
         await asyncio.sleep(8)
         await k.delete()
