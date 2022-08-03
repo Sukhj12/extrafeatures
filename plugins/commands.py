@@ -51,23 +51,12 @@ async def start(client, message):
             InlineKeyboardButton('⚕️ 𝑀𝑌 𝐺𝑅𝑂𝑈𝑃 ⚕️', url='https://t.me/+7FcPo53Z7VZkZDM9'),   
             InlineKeyboardButton('♻️ 𝐴𝐵𝑂𝑈𝑇 ♻️', callback_data='about')
         ]]
-        reply1 = await message.reply_text(
-            text="▢▢▢"
-        )
-        await asyncio.sleep(0.5)
-        reply2 = await reply1.edit_text(
-            text="▣▢▢"
-        )
-        await asyncio.sleep(0.5)
-        reply3 = await reply2.edit_text(
-            text="▣▣▢"
-        )
-        await asyncio.sleep(0.5)
-        reply4 = await reply3.edit_text(
-            text="▣▣▣"
-        )
-        await reply4.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_chat_action("typing")
+        m=await message.reply_sticker("CAACAgIAAxkBAALdtWKbQQeiW14ql5zd86zLUzJO_HCVAAKHFQACPQ9QSd6bZv3Wx6O_HgQ") 
+        await asyncio.sleep(2)
+        await m.delete()
+        await message.reply_chat_action("typing")
         await message.reply_video(
             video=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
