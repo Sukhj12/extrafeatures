@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('✰ ᑕOᑎTᗴᑕT ᗰᗴ ✰', url='https://t.me/Sukhmankaler')
+                InlineKeyboardButton('🔰 𝑂𝑊𝑁𝐸𝑅 🔰', url='https://t.me/Sukhmankaler')
             ],
             [
-                InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('⭕ 𝐻𝐸𝐿𝑃 ⭕', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -42,14 +42,14 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('✰ ᗩᗪᗪ ᗰᗴ TO YOᑌᖇ ᘜᖇOᑌᑭ✰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('✔️ 𝐴𝐷𝐷 𝑀𝐸 𝑇𝑂 𝑌𝑂𝑈𝑅 𝐺𝑅𝑂𝑈𝑃 ✔️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('✰ ᑕᕼᗩᑎᑎᗴᒪ ✰', url='https://t.me/NewLatestMovieDirect'),
-            InlineKeyboardButton('✰ ᑕOᑎTᗴᑕT ᗰᗴ ✰', url='https://t.me/Sukhmankaler')
+            InlineKeyboardButton('🔰 𝐶𝐻𝐴𝑁𝑁𝐸𝐿 🔰', url='https://t.me/NewLatestMovieDirect'),
+            InlineKeyboardButton('📛 𝑂𝑊𝑁𝐸𝑅 📛', url='https://t.me/Sukhmankaler')
             ],[
-            InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', callback_data='help'),
-            InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/+7FcPo53Z7VZkZDM9'),   
-            InlineKeyboardButton('✰ ᗩᗷOᑌT ✰', callback_data='about')
+            InlineKeyboardButton('♂️ 𝐻𝐸𝐿𝑃 ♂️', callback_data='help'),
+            InlineKeyboardButton('⚕️ 𝑀𝑌 𝐺𝑅𝑂𝑈𝑃 ⚕️', url='https://t.me/+7FcPo53Z7VZkZDM9'),   
+            InlineKeyboardButton('♻️ 𝐴𝐵𝑂𝑈𝑇 ♻️', callback_data='about')
         ]]
         reply1 = await message.reply_text(
             text="▢▢▢"
@@ -84,7 +84,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "🤖 𝐽𝑂𝐼𝑁 𝑈𝑃𝐷𝐴𝑇𝐸 𝐶𝐻𝐴𝑁𝑁𝐸𝐿", url=invite_link.invite_link
                 )
             ]
         ]
@@ -105,14 +105,14 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('✰ ᗩᗪᗪ ᗰᗴ TO YOᑌᖇ ᘜᖇOᑌᑭ✰', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('✔️ 𝐴𝐷𝐷 𝑀𝐸 𝑇𝑂 𝑌𝑂𝑈𝑅 𝐺𝑅𝑂𝑈𝑃 ✔️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('✰ ᑕᕼᗩᑎᑎᗴᒪ ✰', url='https://t.me/NewLatestMovieDirect'),
-            InlineKeyboardButton('✰ ᑕOᑎTᗴᑕT ᗰᗴ ✰', url='https://t.me/Sukhmankaler')
+            InlineKeyboardButton('🔰 𝐶𝐻𝐴𝑁𝑁𝐸𝐿 🔰', url='https://t.me/NewLatestMovieDirect'),
+            InlineKeyboardButton('📛 𝑂𝑊𝑁𝐸𝑅 📛', url='https://t.me/Sukhmankaler')
             ],[
-            InlineKeyboardButton('✰ ᕼᗴᒪᑭ ✰', callback_data='help'),
-            InlineKeyboardButton('✰ ᗰY ᘜᖇOᑌᑭ ✰', url='https://t.me/+7FcPo53Z7VZkZDM9'),   
-            InlineKeyboardButton('✰ ᗩᗷOᑌT ✰', callback_data='about')
+            InlineKeyboardButton('♂️ 𝐻𝐸𝐿𝑃 ♂️', callback_data='help'),
+            InlineKeyboardButton('⚕️ 𝑀𝑌 𝐺𝑅𝑂𝑈𝑃 ⚕️', url='https://t.me/+7FcPo53Z7VZkZDM9'),   
+            InlineKeyboardButton('♻️ 𝐴𝐵𝑂𝑈𝑇 ♻️', callback_data='about')
         ]]
         reply1 = await message.reply_text(
             text="▢▢▢"
@@ -282,8 +282,8 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('✰ ᗷᗩᑕKᑌᑭ ✰ ', url="https://t.me/+E5spjHhOEAFlMjRl"),
-                    InlineKeyboardButton('✰ ᑕOᑎTᗴᑕT ᗰᗴ ✰ ', url="https://t.me/Sukhmankaler")
+                    InlineKeyboardButton('✰ 𝐵𝐴𝐶𝐾𝑈𝑃 ✰ ', url="https://t.me/+E5spjHhOEAFlMjRl"),
+                    InlineKeyboardButton('✰ 𝑂𝑊𝑁𝐸𝑅 ✰ ', url="https://t.me/Sukhmankaler")
                 ]
             ]
         )
