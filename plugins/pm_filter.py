@@ -415,7 +415,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("typing")
-        m=await message.reply_sticker("CAACAgIAAxkBAALdtWKbQQeiW14ql5zd86zLUzJO_HCVAAKHFQACPQ9QSd6bZv3Wx6O_HgQ") 
+        m=await message.reply_sticker("CAACAgIAAxkBAAEFdCNi6jNRrCDkaFL9CBuF57ichUSeYQACVAADQbVWDGq3-McIjQH6KQQ") 
         await asyncio.sleep(2)
         await m.delete()
         await message.reply_chat_action("typing")
