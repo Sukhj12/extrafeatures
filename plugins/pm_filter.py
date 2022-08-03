@@ -439,6 +439,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔮 𝑆𝑇𝐴𝑇𝑈𝑆', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        r=await query.message.reply_text('▣▣▢▢▢▢')
+        a=await r.edit('▣▣▣▢▢▢')
+        v=await a.edit('▣▣▣▣▢▢')
+        i=await v.edit('▣▣▣▣▣▢')
+        n=await i.edit('▣▣▣▣▣▣')
+        await asyncio.sleep(1)
+        await n.delete()        
+        await query.message.edit_text(        
+            text="Select your required mode from below!",
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
@@ -452,6 +465,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🏠 𝐻𝑂𝑀𝐸', callback_data='start'),
             InlineKeyboardButton('🔐 𝐶𝐿𝑂𝑆𝐸', callback_data='close_data')
         ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        r=await query.message.reply_text('▣▣▢▢▢▢')
+        a=await r.edit('▣▣▣▢▢▢')
+        v=await a.edit('▣▣▣▣▢▢')
+        i=await v.edit('▣▣▣▣▣▢')
+        n=await i.edit('▣▣▣▣▣▣')
+        await asyncio.sleep(1)
+        await n.delete()        
+        await query.message.edit_text(        
+            text="Select your required mode from below!",
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
@@ -473,6 +499,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('👩‍🦯 𝐵𝐴𝐶𝐾', callback_data='help'),
             InlineKeyboardButton('⏹️ 𝐵𝑈𝑇𝑇𝑂𝑁𝑆', callback_data='button')
         ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        r=await query.message.reply_text('▣▣▢▢▢▢')
+        a=await r.edit('▣▣▣▢▢▢')
+        v=await a.edit('▣▣▣▣▢▢')
+        i=await v.edit('▣▣▣▣▣▢')
+        n=await i.edit('▣▣▣▣▣▣')
+        await asyncio.sleep(1)
+        await n.delete()        
+        await query.message.edit_text(        
+            text="Select your required mode from below!",
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.MANUELFILTER_TXT,
@@ -737,7 +776,20 @@ async def auto_filter(client, msg, spoll=False):
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
         await msg.message.delete()
-
+        reply_markup = InlineKeyboardMarkup(buttons)
+        r=await query.message.reply_text('▣▣▢▢▢▢')
+        a=await r.edit('▣▣▣▢▢▢')
+        v=await a.edit('▣▣▣▣▢▢')
+        i=await v.edit('▣▣▣▣▣▢')
+        n=await i.edit('▣▣▣▣▣▣')
+        await asyncio.sleep(1)
+        await n.delete()        
+        await query.message.edit_text(        
+            text="Select your required mode from below!",
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+  
 
 async def advantage_spell_chok(msg):
     query = re.sub(
