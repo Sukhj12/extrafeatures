@@ -762,10 +762,11 @@ async def auto_filter(client, msg, spoll=False):
     else:
         btn.append(
             reply_markup = InlineKeyboardMarkup(buttons)
-            await message.reply_chat_action("typing")
+            await message.reply_chat_action('poster')
             K=await message.reply_sticker("CAACAgIAAxkBAAEFdCNi6jNRrCDkaFL9CBuF57ichUSeYQACVAADQbVWDGq3-McIjQH6KQQ") 
             await asyncio.sleep(4)
             await k.delete()
+            await message.reply_chat_action("poster")
         )
     else:
         cap = f"Here is what i found for your query {search}"
