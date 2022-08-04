@@ -140,9 +140,9 @@ async def advantage_spoll_choker(bot, query):
                 reply_markup=InlineKeyboardMarkup(
                                        [[
                                          InlineKeyboardButton('𝑃𝑅𝐸𝑆𝑆 𝑀𝐸 ', url='https://t.me/RQ_ADMINE')
+        
                                        ]]
-                              )
-
+)
                await asyncio.sleep(20)
                await k.delete()
 
