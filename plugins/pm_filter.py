@@ -767,7 +767,7 @@ async def auto_filter(client, msg, spoll=False):
                                       reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
-            poster = pic.replace('.jpg', "http://telegra.ph/file/fa9294998c8bbfe97d889.jpg")
+            poster = pic.replace('.jpg', "._V1_UX360.jpg")
             await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
         except Exception as e:
             logger.exception(e)
@@ -776,20 +776,7 @@ async def auto_filter(client, msg, spoll=False):
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
         await msg.message.delete()
-        reply_markup = InlineKeyboardMarkup(buttons)
-        r=await query.message.reply_text('▣▣▢▢▢▢')
-        a=await r.edit('▣▣▣▢▢▢')
-        v=await a.edit('▣▣▣▣▢▢')
-        i=await v.edit('▣▣▣▣▣▢')
-        n=await i.edit('▣▣▣▣▣▣')
-        await asyncio.sleep(1)
-        await n.delete()        
-        await query.message.edit_text(        
-            text="Select your required mode from below!",
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-  
+
 
 async def advantage_spell_chok(msg):
     query = re.sub(
