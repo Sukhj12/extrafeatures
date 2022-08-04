@@ -763,13 +763,6 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"Here is what i found for your query {search}"
     if imdb and imdb.get('poster'):
         try:
-            reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_chat_action("typing")
-        m=await message.reply_sticker("CAACAgIAAxkBAAEFdCNi6jNRrCDkaFL9CBuF57ichUSeYQACVAADQbVWDGq3-McIjQH6KQQ") 
-        await asyncio.sleep(2)
-        await m.delete()
-        await message.reply_chat_action("typing")
-        try: 
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
