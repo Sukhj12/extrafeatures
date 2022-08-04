@@ -817,18 +817,12 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        button = InlineKeyboardMarkup(
-        [[
-           InlineKeyboardButton('✅ 𝐺𝑂𝑂𝐺𝐿𝐸 ✅ ', url=f"https://www.google.com/search?q={search}") 
-        ],
-        [
-           InlineKeyboardButton('🔰 𝐼𝑀𝐵𝐷 🔰 ', url=f"https://www.imdb.com/find?q={search}"),
-           InlineKeyboardButton('⭕ 𝑊𝐼𝐾𝐼𝑃𝐸𝐷𝐼𝐴 ⭕ ', url=f"https://en.m.wikipedia.org/w/index.php?search={search}")
-        ]])
-        k = await msg.reply(f"Hey, Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>", reply_markup=button)
-        await asyncio.sleep(60)
-        await k.delete()
-        return
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_chat_action("typing")
+        m=await message.reply_sticker("CAACAgIAAxkBAAEFdCNi6jNRrCDkaFL9CBuF57ichUSeYQACVAADQbVWDGq3-McIjQH6KQQ") 
+        await asyncio.sleep(2)
+        await m.delete()
+        await message.reply_chat_action("typing")
     SPELL_CHECK[msg.message_id] = movielist
     btn = [[
         InlineKeyboardButton(
