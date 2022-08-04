@@ -769,6 +769,7 @@ async def auto_filter(client, msg, spoll=False):
         await asyncio.sleep(2)
         await m.delete()
         await message.reply_chat_action("typing")
+        try: 
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
