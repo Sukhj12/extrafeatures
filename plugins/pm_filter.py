@@ -823,7 +823,6 @@ async def advantage_spell_chok(msg):
                     await asyncio.sleep(2)
                     await m.delete()
                     await message.reply_chat_action("typing")
-        )
     SPELL_CHECK[msg.message_id] = movielist
     btn = [[
         InlineKeyboardButton(
