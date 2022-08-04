@@ -817,12 +817,13 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_chat_action("typing")
-        m=await message.reply_sticker("CAACAgIAAxkBAAEFdCNi6jNRrCDkaFL9CBuF57ichUSeYQACVAADQbVWDGq3-McIjQH6KQQ") 
-        await asyncio.sleep(2)
-        await m.delete()
-        await message.reply_chat_action("typing")
+                    reply_markup = InlineKeyboardMarkup(buttons)
+                    await message.reply_chat_action("typing")
+                  m=await message.reply_sticker("CAACAgIAAxkBAAEFdCNi6jNRrCDkaFL9CBuF57ichUSeYQACVAADQbVWDGq3-McIjQH6KQQ") 
+                    await asyncio.sleep(2)
+                    await m.delete()
+                    await message.reply_chat_action("typing")
+        )
     SPELL_CHECK[msg.message_id] = movielist
     btn = [[
         InlineKeyboardButton(
