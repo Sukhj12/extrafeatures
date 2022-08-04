@@ -137,11 +137,10 @@ async def advantage_spoll_choker(bot, query):
         else:
             k = await query.message.edit(
                 text=('<b>𝑇𝐻𝐼𝑆 𝑀𝑂𝑉𝐼𝐸 𝑁𝑂𝑇 𝑈𝑃𝐿𝑂𝐴𝐷 𝑅𝑈𝑄𝑈𝐸𝑆𝑇 𝑇𝑂 𝐴𝐷𝑀𝐼𝑁𝐸')
-                     reply_markup=InlineKeyboardMarkup[
-                                       [[
-                                         InlineKeyboardButton('𝑃𝑅𝐸𝑆𝑆 𝑀𝐸 ', url='https://t.me/RQ_ADMINE')
-        
-                                       ]]
+                     reply_markup = InlineKeyboardMarkup(buttons)
+                                  [[
+                                    InlineKeyboardButton('𝑃𝑅𝐸𝑆𝑆 𝑀𝐸 ', url='https://t.me/RQ_ADMINE')
+                                  ]]
 )
                await asyncio.sleep(20)
                await k.delete()
