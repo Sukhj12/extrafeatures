@@ -832,6 +832,7 @@ async def advantage_spell_chok(msg):
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     one_button = InlineKeyboardMarkup(
+                            [[
                            InlineKeyboardButton("🧡 𝑂𝑊𝑁𝐸𝑅 🧡 ", url="https://t.me/RQ_ADMINE"),
                            InlineKeyboardButton("⚕️ 𝑆𝑃𝐸𝐿𝐿𝐼𝑁𝐺 ⚕️ ", url="https://www.google.com/search?q=hjj+movie"),
                            InlineKeyboardButton("⭕ 𝐺𝑂𝑂𝐺𝐿𝐸 ⭕ ", url="https://www.google.com/")]
