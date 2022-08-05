@@ -58,8 +58,8 @@ async def start(client, message):
         await m.delete()
         await message.reply_chat_action("typing")
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_sticker(
-            sticker=random.choice(PICS),
+        await message.reply_chat_action("sticker")
+            await message.replay_sticker("CAACAgIAAxkBAAEFdCNi6jNRrCDkaFL9CBuF57ichUSeYQACVAADQbVWDGq3-McIjQH6KQQ")
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
         )
