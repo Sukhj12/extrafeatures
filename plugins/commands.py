@@ -59,7 +59,7 @@ async def start(client, message):
         await message.reply_chat_action("typing")
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_sticker(
-            sticker=random.choice(PICS),
+                      sticker="CAACAgIAAxkBAAEFeS9i7OjIFEzZ5SiS4-uApVlzDe7P8QACVBYAAtB7QUn8uVjZ80ZWKCkE"),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='sticker'
