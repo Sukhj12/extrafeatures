@@ -135,11 +135,11 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            one_button = InlineKeyboardMarkup(InlineKeyboardButton("⚕️ 𝑃𝑅𝐸𝑆𝑆 𝑀𝐸 ⚕️", url="https://t.me/RQ_RUQUEST")
+            one_button = InlineKeyboardMarkup( InlineKeyboardButton("⚕️ 𝑃𝑅𝐸𝑆𝑆 𝑀𝐸 ⚕️", url="https://t.me/RQ_RUQUEST")
             k = await msg.reply_video(video="https://telegra.ph/file/ed19c9c5f3498e5a48894.mp4", caption="𝑆𝑂𝑅𝑅𝑌 𝑇𝐻𝐼𝑆 𝑀𝑂𝑉𝐼𝐸 𝑁𝑂𝑇 𝑈𝑃𝐿𝑂𝐴𝐷 𝐵𝑌 𝑂𝑊𝑁𝐸𝑅 👉 𝐶𝑂𝑁𝑇𝐸𝐶𝑇 𝑇𝑂 𝑂𝑊𝑁𝐸𝑅 👇", reply_markup = one_button)
             await asyncio.sleep(20)
             await k.delete()
-            await msg.delete()
+
 
 
 @Client.on_callback_query()
