@@ -58,11 +58,10 @@ async def start(client, message):
         await m.delete()
         await message.reply_chat_action("typing")
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_video(
-            video=random.choice(PICS),
+        await message.reply_sticker(
+            sticker=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
-            parse_mode='html'
         )
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
