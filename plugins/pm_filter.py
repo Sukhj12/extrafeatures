@@ -138,8 +138,17 @@ async def advantage_spoll_choker(bot, query):
             k = await query.message.edit('<b>TᕼIՏ ᗰOᐯIᗴ ᑎOT ᑌᑭᒪOᗩᗪ ᖇᑌᑫᑌᗴՏT TO ᗩᗪᗰIᑎᗴ ✰✰✰✰ 👉[ᑕᒪIᑕK ᕼᗴᖇᗴ](https://t.me/RQ_ADMINE)👈ᖴOᖇ ᖇᑌᑫᑌᗴՏT</b>')
             await asyncio.sleep(20)
             await k.delete()
+            reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('✰ 𝐵𝐴𝐶𝐾𝑈𝑃 ✰ ', url="https://t.me/+E5spjHhOEAFlMjRl"),
+                    InlineKeyboardButton('✰ 𝑂𝑊𝑁𝐸𝑅 ✰ ', url="https://t.me/Sukhmankaler")
+                ]
+            ]
+        )
+    )
 
-
+    
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
     if query.data == "close_data":
