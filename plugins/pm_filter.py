@@ -910,7 +910,7 @@ async def advantage_spell_chok(msg):
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     one_button = InlineKeyboardMarkup([[InlineKeyboardButton("⚕️𝐴𝐷𝑀𝐼𝑁𝐸⚕️", url="https://t.me/RQ_ADMINE"), InlineKeyboardButton("⚕️ 𝐺𝑂𝑂𝐺𝐿𝐸 ⚕️", url="https://www.google.com/")]])
-    k = await msg.reply_video(video="https://telegra.ph//file/d90256b1575c7aaadccc5.mp4", caption="Hey, 𝐒𝐨𝐫𝐫𝐲, 𝐍𝐨 𝐌𝐨𝐯𝐢𝐞/𝐒𝐞𝐫𝐢𝐞𝐬 𝐑𝐞𝐥𝐚𝐭𝐞𝐝 𝐓𝐨 𝐓𝐡𝐞 𝐆𝐢𝐯𝐞𝐧 𝐖𝐨𝐫𝐝 𝐖𝐚𝐬 𝐅𝐨𝐮𝐧𝐝 🥺\n\n𝙿𝚘𝚜𝚜𝚒𝚋𝚕𝚎 𝙲𝚊𝚞𝚜𝚎𝚜 : 🤔\n\n⭕️ 𝐍𝐨𝐭 𝐑𝐞𝐥𝐞𝐚𝐬𝐞𝐝 𝐘𝐞𝐭\n⭕️ 𝐈𝐧𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠\n⭕ 𝐍𝐨𝐭 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲 𝐎𝐰𝐧𝐞𝐫\n\n👉Contact To My Owner👇", reply_markup = one_button)
+    k = await msg.reply_photo(photo="https://telegra.ph/file/650c8b857763f8d96892c.jpg", caption="Hey, 𝐒𝐨𝐫𝐫𝐲, 𝐍𝐨 𝐌𝐨𝐯𝐢𝐞/𝐒𝐞𝐫𝐢𝐞𝐬 𝐑𝐞𝐥𝐚𝐭𝐞𝐝 𝐓𝐨 𝐓𝐡𝐞 𝐆𝐢𝐯𝐞𝐧 𝐖𝐨𝐫𝐝 𝐖𝐚𝐬 𝐅𝐨𝐮𝐧𝐝 🥺\n\n𝙿𝚘𝚜𝚜𝚒𝚋𝚕𝚎 𝙲𝚊𝚞𝚜𝚎𝚜 : 🤔\n\n⭕️ 𝐆𝐎 𝐓𝐎 𝐆𝐑𝐎𝐔𝐏 \n⭕️ 𝐒𝐄𝐀𝐑𝐂𝐇 𝐘𝐎𝐔𝐑 𝐌𝐎𝐕𝐈𝐄 \n⭕ 𝐍𝐨\n\n👆𝐂𝐎𝐏𝐘 𝐋𝐈𝐊𝐄 𝐓𝐇𝐈𝐒 👆", reply_markup = one_button)
     await asyncio.sleep(20)
     await k.delete()
     await msg.delete()
