@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🔰 𝑂𝑊𝑁𝐸𝑅 🔰', url='https://t.me/Sukhmankaler')
+                InlineKeyboardButton('🔰 𝙾𝚆𝙽𝙴𝚁 🔰', url='https://t.me/Sukhmankaler')
             ],
             [
-                InlineKeyboardButton('⭕ 𝐻𝐸𝐿𝑃 ⭕', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('⭕ 𝙷𝙴𝙻𝙿 ⭕', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -266,8 +266,8 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('✰ 𝐵𝐴𝐶𝐾𝑈𝑃 ✰ ', url="https://t.me/+E5spjHhOEAFlMjRl"),
-                    InlineKeyboardButton('✰ 𝑂𝑊𝑁𝐸𝑅 ✰ ', url="https://t.me/Sukhmankaler")
+                    InlineKeyboardButton('✰ 𝙱𝙰𝙲𝙺𝚄𝙿 ✰ ', url="https://t.me/+E5spjHhOEAFlMjRl"),
+                    InlineKeyboardButton('✰ 𝙾𝚆𝙽𝙴𝚁 ✰ ', url="https://t.me/Sukhmankaler")
                 ]
             ]
         )
