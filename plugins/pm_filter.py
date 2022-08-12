@@ -206,14 +206,14 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('<b>𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 𝙽𝙾𝚃 𝚄𝙿𝙻𝙾𝙰𝙳 𝚁𝚄𝚀𝙸𝙴𝚂𝚃 𝚃𝙾 𝙰𝙳𝙼𝙸𝙽𝙴 👉♻️ @DmAdmine ♻️</b>')
+            k = await query.message.edit('<b>𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 𝙽𝙾𝚃 𝚄𝙿𝙻𝙾𝙰𝙳 𝚁𝚄𝚀𝙸𝙴𝚂𝚃 𝚃𝙾 𝙰𝙳𝙼𝙸𝙽𝙴   👉♻️ @DmAdmine ♻️👈</b>')
             await asyncio.sleep(20)
             await k.delete()
             reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('✰ 𝐵𝐴𝐶𝐾𝑈𝑃 ✰ ', url="https://t.me/+E5spjHhOEAFlMjRl"),
-                    InlineKeyboardButton('✰ 𝑂𝑊𝑁𝐸𝑅 ✰ ', url="https://t.me/Sukhmankaler")
+                    InlineKeyboardButton('⚕️ 𝐵𝐴𝐶𝐾𝑈𝑃 ⚕️ ', url="https://t.me/+E5spjHhOEAFlMjRl"),
+                    InlineKeyboardButton('⚕️ 𝑂𝑊𝑁𝐸𝑅 ⚕️ ', url="https://t.me/Sukhmankaler")
                 ]
             ]
         )
@@ -487,7 +487,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔰 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 🔰', url='https://t.me/+E5spjHhOEAFlMjRl'),
             InlineKeyboardButton('📛 𝙶𝚁𝙾𝚄𝙿 📛', url='https://t.me/+7FcPo53Z7VZkZDM9')
             ],[
-            InlineKeyboardButton('♂⚕️ 𝙰𝙱𝙾𝚄𝚃 ⚕️', callback_data='about')
+            InlineKeyboardButton('⚕️ 𝙷𝙴𝙻𝙿 ⚕️', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("typing")
@@ -797,9 +797,9 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
         )
     btn.insert(0, [
-        InlineKeyboardButton(text="⚕️𝙶𝚁𝙾𝚄𝙿", url="https://t.me/+7FcPo53Z7VZkZDM9"),
+        InlineKeyboardButton(text="💝𝙶𝚁𝙾𝚄𝙿", url="https://t.me/+7FcPo53Z7VZkZDM9"),
         InlineKeyboardButton(text="𝙰𝙳𝙼𝙸𝙽𝙴", url="https://t.me/Sukhmankaler"),
-        InlineKeyboardButton(text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻⚕️", url="https://t.me/+E5spjHhOEAFlMjRl")
+        InlineKeyboardButton(text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻💝", url="https://t.me/+E5spjHhOEAFlMjRl")
     ])
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
