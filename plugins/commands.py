@@ -47,7 +47,7 @@ async def start(client, message):
             InlineKeyboardButton('🔰 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 🔰', url='https://t.me/+E5spjHhOEAFlMjRl'),
             InlineKeyboardButton('📛 𝙶𝚁𝙾𝚄𝙿 📛', url='https://t.me/+7FcPo53Z7VZkZDM9')
             ],[
-            InlineKeyboardButton('♂⚕️ 𝙰𝙱𝙾𝚄𝚃 ⚕️', callback_data='about')
+            InlineKeyboardButton('⚕️ 𝙷𝙴𝙻𝙿 ⚕️', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("typing")
@@ -99,7 +99,7 @@ async def start(client, message):
             InlineKeyboardButton('🔰 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 🔰', url='https://t.me/+E5spjHhOEAFlMjRl'),
             InlineKeyboardButton('📛 𝙶𝚁𝙾𝚄𝙿 📛', url='https://t.me/+7FcPo53Z7VZkZDM9')
             ],[
-            InlineKeyboardButton('♂⚕️ 𝙰𝙱𝙾𝚄𝚃 ⚕️', callback_data='about')
+            InlineKeyboardButton('⚕️ 𝙷𝙴𝙻𝙿 ⚕️', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("typing")
@@ -266,8 +266,8 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('✰ 𝙱𝙰𝙲𝙺𝚄𝙿 ✰ ', url="https://t.me/+E5spjHhOEAFlMjRl"),
-                    InlineKeyboardButton('✰ 𝙾𝚆𝙽𝙴𝚁 ✰ ', url="https://t.me/Sukhmankaler")
+                    InlineKeyboardButton('⚕️ 𝙱𝙰𝙲𝙺𝚄𝙿 ⚕️ ', url="https://t.me/+E5spjHhOEAFlMjRl"),
+                    InlineKeyboardButton('⚕️ 𝙾𝚆𝙽𝙴𝚁 ⚕️ ', url="https://t.me/Sukhmankaler")
                 ]
             ]
         )
