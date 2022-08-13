@@ -845,7 +845,7 @@ async def auto_filter(client, msg, spoll=False):
             await client.send_video(
                 chat_id=message.chat.id,
                 video="https://telegra.ph/file/178a3e2dac4bf016f5cbe.mp4",
-                caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ <code>{search}</code> \nBʏ <spoiler>{message.from_user.mention}</spoiler> \nIs Now Cʟᴏꜱᴇᴅ 🗑️\n\n@DmAdmine",
+                caption=f"⭕ 𝚈𝚘𝚞𝚛 𝚚𝚞𝚎𝚛𝚢 ⭕ <code>{search}</code> \n 💝𝚁𝚄𝚀𝚄𝙴𝚂𝚃 𝙱𝚈💝 <spoiler>{message.from_user.mention}</spoiler> \n✖️I𝚂 𝙽𝙾𝚆 𝙲𝙻𝙾𝚂𝙴𝙳✖️",
                 reply_to_message_id=message.message_id
             )
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
@@ -857,7 +857,7 @@ async def auto_filter(client, msg, spoll=False):
             await client.send_video(
                 chat_id=message.chat.id,
                 video="https://telegra.ph/file/178a3e2dac4bf016f5cbe.mp4",
-                caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ <code>{search}</code> \nBʏ <spoiler>{message.from_user.mention}</spoiler> \nIs Now Cʟᴏꜱᴇᴅ 🗑️\n\n@DmAdmine",
+                caption=f"⭕ 𝚈𝚘𝚞𝚛 𝚚𝚞𝚎𝚛𝚢 ⭕ <code>{search}</code> \n 💝𝚁𝚄𝚀𝚄𝙴𝚂𝚃 𝙱𝚈💝 <spoiler>{message.from_user.mention}</spoiler> \n✖️I𝚂 𝙽𝙾𝚆 𝙲𝙻𝙾𝚂𝙴𝙳✖️",
                 reply_to_message_id=message.message_id
             )
         except Exception as e:
@@ -868,7 +868,7 @@ async def auto_filter(client, msg, spoll=False):
             await client.send_video(
                 chat_id=message.chat.id,
                 video="https://telegra.ph/file/178a3e2dac4bf016f5cbe.mp4",
-                caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ <code>{search}</code> \nBʏ <spoiler>{message.from_user.mention}</spoiler> \nIs Now Cʟᴏꜱᴇᴅ 🗑️\n\n@DmAdmine",
+                caption=f"⭕ 𝚈𝚘𝚞𝚛 𝚚𝚞𝚎𝚛𝚢 ⭕ <code>{search}</code> \n 💝𝚁𝚄𝚀𝚄𝙴𝚂𝚃 𝙱𝚈💝 <spoiler>{message.from_user.mention}</spoiler> \n✖️I𝚂 𝙽𝙾𝚆 𝙲𝙻𝙾𝚂𝙴𝙳✖️",
                 reply_to_message_id=message.message_id
             )
         if spoll:
