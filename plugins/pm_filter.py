@@ -871,6 +871,8 @@ async def auto_filter(client, msg, spoll=False):
                 caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ <code>{search}</code> \nBʏ <spoiler>{message.from_user.mention}</spoiler> \nIs Now Cʟᴏꜱᴇᴅ 🗑️\n\n@DmAdmine",
                 reply_to_message_id=message.message_id
             )
+    if spoll:
+        await msg.message.delete()
 
 
 async def advantage_spell_chok(msg):
