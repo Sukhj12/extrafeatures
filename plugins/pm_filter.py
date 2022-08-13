@@ -841,38 +841,20 @@ async def auto_filter(client, msg, spoll=False):
         try:
             hehe = await message.reply_photo(photo="https://telegra.ph/file/71799ade7585db8978126.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(600)
-            await hehe.delete()
-            await client.send_video(
-                chat_id=message.chat.id,
-                video="https://telegra.ph/file/178a3e2dac4bf016f5cbe.mp4",
-                caption=f"⭕ 𝚈𝚘𝚞𝚛 𝚚𝚞𝚎𝚛𝚢 ⭕ <code>{search}</code> \n 💝𝚁𝚄𝚀𝚄𝙴𝚂𝚃 𝙱𝚈💝 <spoiler>{message.from_user.mention}</spoiler> \n✖️I𝚂 𝙽𝙾𝚆 𝙲𝙻𝙾𝚂𝙴𝙳✖️",
-                reply_to_message_id=message.message_id
-            )
+            await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(600)
-            await hmm.delete()
-            await client.send_video(
-                chat_id=message.chat.id,
-                video="https://telegra.ph/file/178a3e2dac4bf016f5cbe.mp4",
-                caption=f"⭕ 𝚈𝚘𝚞𝚛 𝚚𝚞𝚎𝚛𝚢 ⭕ <code>{search}</code> \n 💝𝚁𝚄𝚀𝚄𝙴𝚂𝚃 𝙱𝚈💝 <spoiler>{message.from_user.mention}</spoiler> \n✖️I𝚂 𝙽𝙾𝚆 𝙲𝙻𝙾𝚂𝙴𝙳✖️",
-                reply_to_message_id=message.message_id
-            )
+            await asyncio.sleep(600)            
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_text(text=cap, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(600)
-            await fek.delete()
-            await client.send_video(
-                chat_id=message.chat.id,
-                video="https://telegra.ph/file/178a3e2dac4bf016f5cbe.mp4",
-                caption=f"⭕ 𝚈𝚘𝚞𝚛 𝚚𝚞𝚎𝚛𝚢 ⭕ <code>{search}</code> \n 💝𝚁𝚄𝚀𝚄𝙴𝚂𝚃 𝙱𝚈💝 <spoiler>{message.from_user.mention}</spoiler> \n✖️I𝚂 𝙽𝙾𝚆 𝙲𝙻𝙾𝚂𝙴𝙳✖️",
-                reply_to_message_id=message.message_id
-            )
-        if spoll:
-            await msg.message.delete()
+            await asyncio.sleep(600)            
+    else:
+        fuk = await message.reply_text(text=cap, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(btn))
+        await asyncio.sleep(600)
+        await fuk.delete()
 
 
 async def advantage_spell_chok(msg):
