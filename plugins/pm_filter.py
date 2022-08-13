@@ -840,7 +840,7 @@ async def auto_filter(client, msg, spoll=False):
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(6)
+            await asyncio.sleep(3600)
             await hehe.delete()
             await client.send_video(
                 chat_id=message.chat.id,
@@ -852,7 +852,7 @@ async def auto_filter(client, msg, spoll=False):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(6)
+            await asyncio.sleep(3600)
             await hmm.delete()
             await client.send_video(
                 chat_id=message.chat.id,
@@ -863,7 +863,7 @@ async def auto_filter(client, msg, spoll=False):
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_text(text=cap, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(6)
+            await asyncio.sleep(3600)
             await fek.delete()
             await client.send_video(
                 chat_id=message.chat.id,
