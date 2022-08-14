@@ -487,6 +487,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔰 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 🔰', url='https://t.me/+E5spjHhOEAFlMjRl'),
             InlineKeyboardButton('📛 𝙶𝚁𝙾𝚄𝙿 📛', url='https://t.me/+7FcPo53Z7VZkZDM9')
             ],[
+            InlineKeyboardButton('♻️ 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴 ♻️', url='https://youtube.com/shorts/WiDmMCNCcGQ?feature=share'),
             InlineKeyboardButton('⚕️ 𝙷𝙴𝙻𝙿 ⚕️', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
