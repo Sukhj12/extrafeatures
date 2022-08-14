@@ -837,24 +837,43 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         cap = f"<b><i>Movie Name : {search}\nRequested By : {message.from_user.mention}\nGroup : {message.chat.title}</i></b>"
+    if imdbcap = f"♨️<STRONG>{search}</STRONG>♨️\n🤖 𝗨𝗣𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 ♪♪ \n✨@TechnoMoviesCollection\n⚠️𝐍𝐨𝐭𝐞:♪→𝗜𝗳 𝗬𝗼𝘂 𝗗𝗼𝗻'𝘁 𝗞𝗻𝗼𝘄 𝗛𝗼𝘄 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗜𝘁 𝗧𝗵𝗲𝗻 𝗧𝘆𝗽𝗲 #How 𝗜𝗻 𝗧𝗵𝗲 𝗚𝗿𝗼𝘂𝗽\n\n➥ 𝗝𝗼𝗶𝗻 ➼ @TmMainChannel"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(1200)
-            await hehe.delete()            
+            await asyncio.sleep(3600)
+            await hehe.delete()
+            await client.send_video(
+                chat_id=message.chat.id,
+                video="https://telegra.ph/file/178a3e2dac4bf016f5cbe.mp4",
+                caption=f"⭕ 𝚈𝚘𝚞𝚛 𝚚𝚞𝚎𝚛𝚢 ⭕ <code>{search}</code> \n 💝𝚁𝚄𝚀𝚄𝙴𝚂𝚃 𝙱𝚈💝 <spoiler>{message.from_user.mention}</spoiler> \n✖️I𝚂 𝙽𝙾𝚆 𝙲𝙻𝙾𝚂𝙴𝙳✖️",
+                reply_to_message_id=message.message_id
+            )
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(1200)            
+            await asyncio.sleep(3600)
+            await hmm.delete()
+            await client.send_video(
+                chat_id=message.chat.id,
+                video="https://telegra.ph/file/178a3e2dac4bf016f5cbe.mp4",
+                caption=f"⭕ 𝚈𝚘𝚞𝚛 𝚚𝚞𝚎𝚛𝚢 ⭕ <code>{search}</code> \n 💝𝚁𝚄𝚀𝚄𝙴𝚂𝚃 𝙱𝚈💝 <spoiler>{message.from_user.mention}</spoiler> \n✖️I𝚂 𝙽𝙾𝚆 𝙲𝙻𝙾𝚂𝙴𝙳✖️",
+                reply_to_message_id=message.message_id
+            )
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_text(text=cap, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(1200)            
-    else:
-        fuk = await message.reply_text(text=cap, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(1200)
-        await fuk.delete()
+            await asyncio.sleep(3600)
+            await fek.delete()
+            await client.send_video(
+                chat_id=message.chat.id,
+                video="https://telegra.ph/file/178a3e2dac4bf016f5cbe.mp4",
+                caption=f"⭕ 𝚈𝚘𝚞𝚛 𝚚𝚞𝚎𝚛𝚢 ⭕ <code>{search}</code> \n 💝𝚁𝚄𝚀𝚄𝙴𝚂𝚃 𝙱𝚈💝 <spoiler>{message.from_user.mention}</spoiler> \n✖️I𝚂 𝙽𝙾𝚆 𝙲𝙻𝙾𝚂𝙴𝙳✖️",
+                reply_to_message_id=message.message_id
+            )
+        if spoll:
+            await msg.message.delete()
 
 
 async def advantage_spell_chok(msg):
