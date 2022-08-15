@@ -867,8 +867,8 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply_video(video="https://telegra.ph//file/d90256b1575c7aaadccc5.mp4", caption="<b>Hey, 𝐒𝐨𝐫𝐫𝐲, 𝐍𝐨 𝐌𝐨𝐯𝐢𝐞/𝐒𝐞𝐫𝐢𝐞𝐬 𝐑𝐞𝐥𝐚𝐭𝐞𝐝 𝐓𝐨 𝐓𝐡𝐞 𝐆𝐢𝐯𝐞𝐧 𝐖𝐨𝐫𝐝 𝐖𝐚𝐬 𝐅𝐨𝐮𝐧𝐝 🥺</b>\n\n<b>𝙿𝚘𝚜𝚜𝚒𝚋𝚕𝚎 𝙲𝚊𝚞𝚜𝚎𝚜 : 🤔</b>\n\n<b>⭕️ 𝐍𝐨𝐭 𝐑𝐞𝐥𝐞𝐚𝐬𝐞𝐝 𝐘𝐞𝐭\n⭕️ 𝐈𝐧𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠\n⭕ 𝐍𝐨𝐭 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲 𝐎𝐰𝐧𝐞𝐫\n\n<b>👉Contact To My Owner👇</b>\n\n<b>@TechnoKillerBot 🌴</b>")
-        await asyncio.sleep(20)
+        k = await msg.reply_photo(photo="https://telegra.ph/file/650c8b857763f8d96892c.jpg", caption="💙𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 𝚂𝙿𝙴𝙻𝙻𝙸𝙽𝙶 𝚆𝚁𝙾𝙽𝙶, 𝚃𝚈𝙿𝙴 𝙲𝙾𝚁𝚁𝙴𝙲𝚃 𝚂𝙿𝙴𝙻𝙻𝙸𝙽𝙶,𝙲𝙷𝙴𝙲𝙺 𝚃𝙷𝙴 𝙿𝙸𝙲𝚃𝚄𝚁𝙴,𝙰𝙽𝙳 𝙲𝙾𝙿𝚈 𝙿𝙰𝚂𝚃𝙴 𝙻𝙸𝙺𝙴 𝚃𝙷𝙸𝚂⚕️")
+        await asyncio.sleep()
         await k.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
